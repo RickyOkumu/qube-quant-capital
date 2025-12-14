@@ -1,8 +1,0 @@
-# docker/render.yaml
-services:
-  - type: web
-    name: qube-quant-capital
-    env: docker
-    plan: free
-    dockerfilePath: docker/Dockerfile
-    autoDeploy: true
