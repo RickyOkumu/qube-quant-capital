@@ -1,0 +1,31 @@
+# app/config.py
+import os
+
+# Symbols, modes
+SYMBOLS = os.getenv("SYMBOLS", "EURUSD,USDJPY,XAUUSD,GBPUSD,NAS100").split(",")
+TRADE_MODES = os.getenv("TRADE_MODES", "auto").split(",")  # "scalp","intra","swing","auto"
+RISK_PERCENT = float(os.getenv("RISK_PERCENT", "1.0"))
+TRADE_THRESHOLD = float(os.getenv("TRADE_THRESHOLD", "0.60"))
+FEATURE_COUNT = int(os.getenv("FEATURE_COUNT", "60"))
+
+# AI cloud
+AI_CLOUD_ENDPOINT = os.getenv("AI_CLOUD_ENDPOINT", "")
+AI_CLOUD_KEY = os.getenv("AI_CLOUD_KEY", "")
+
+# News
+FORECASTER_API_KEY = os.getenv("FORECASTER_API_KEY", "")
+
+# Telegram
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
+
+# Broker placeholders
+BROKER_API_KEY = os.getenv("BROKER_API_KEY", "")
+BROKER_API_SECRET = os.getenv("BROKER_API_SECRET", "")
+
+# runtime / scheduling
+H1_LOOP_SECONDS = int(os.getenv("H1_LOOP_SECONDS", str(60*60))) # default: 1h
+POLL_SECONDS = int(os.getenv("POLL_SECONDS", "10"))
+
+# others
+ENV = os.getenv("ENV", "production")
