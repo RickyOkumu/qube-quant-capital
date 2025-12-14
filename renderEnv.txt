@@ -1,0 +1,23 @@
+AI_CLOUD_ENDPOINT — your cloud AI scoring endpoint (or leave empty to use local model)
+
+AI_CLOUD_KEY — (optional) auth for the cloud AI
+
+FORECASTER_API_KEY — API key for forecaster.biz (if available). If not, the news module can scrape headlines (see legal & TOS notes).
+
+TELEGRAM_BOT_TOKEN — Telegram bot token for alerts.
+
+TELEGRAM_CHAT_ID — Chat ID for the channel/user receiving alerts.
+
+BROKER_API_KEY — Broker REST API key (FBS or other) — placeholder (no auto-money risk unless you configure).
+
+BROKER_API_SECRET — Broker API secret.
+
+SYMBOLS — comma-separated list: e.g. EURUSD,USDJPY,XAUUSD,GBPUSD,NAS100
+
+TRADE_MODES — comma list of modes to allow: scalp,intra,swing or auto for adaptive.
+
+RISK_PERCENT — default risk per trade (e.g., 1.0 = 1%).
+
+TRADE_THRESHOLD — final score threshold (e.g., 0.60)
+
+RENDER_PORT — typically 10000 (Render uses $PORT env var but we've set up)

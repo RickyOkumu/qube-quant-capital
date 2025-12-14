@@ -1,0 +1,27 @@
+EliteQuant-Qube/
+│
+├── app/
+│   ├── main.py                    # FastAPI app + async loop orchestration
+│   ├── config.py                  # configuration (env read)
+│   ├── feature_engine.py          # feature extraction (multi-TF + micro)
+│   ├── regime.py                  # regime detection & classification
+│   ├── ai_interface.py            # cloud AI call to your model (or Forecaster news)
+│   ├── local_model.py             # local lightweight model + online update
+│   ├── risk.py                    # risk management / lot-sizing
+│   ├── trade_executor.py          # broker execution placeholder (FBS API TODO)
+│   ├── news_fetcher.py            # Forecaster.biz & news ingestion
+│   ├── microstructure.py          # tick-level placeholders
+│   ├── notifier.py                # Telegram notifier
+│   ├── logger_util.py             # CSV & structured logging
+│   └── trainer.py                 # offline training / self-learning pipeline
+│
+├── docker/
+│   ├── Dockerfile
+│   └── render.yaml                # Render service (webservice) config
+│
+├── scripts/
+│   ├── deploy_render.md           # step-by-step Render deploy (phone-friendly)
+│   └── run_local.md               # how to run locally (optional)
+│
+├── requirements.txt
+└── README.md                      # summarized manual
